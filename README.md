@@ -2,7 +2,7 @@
 This README will walk you through the steps of downloading and modifying our code to implement our game!
 Skip to the "Pokemon Game" section if you already have your code pulled up on IntelliJ
 
-Vocabulary (I know, this is starting to feel like school, ugh)
+#### Vocabulary (I know, this is starting to feel like school, ugh)
 * Directory: This is a place in your computer where files can be stored, lots of people call this a "folder".
 * Repository: A place where we can store code for a project on Github.
 * Initialize: To give something a starting value
@@ -68,4 +68,11 @@ Now we can take a look at the code. On the left side of your IntelliJ window, th
 To get to our main code, open Pokemon-master -> src -> Game. Double click on "Game" to open up our game's code. This file is called a **_Class_**. Java is entirely focused on using classes to make things happen. Most of this project will just involve editing and adding things to the _Game_ class.
 
 ### Code review
-Let's walk throug
+
+
+### Poke
+
+
+### To Do!
+Let's talk about how we can make our game better.
+Right now, we can look for Pokemon, check our bag to see how many Pokeballs we have, and quit. If we look for 
