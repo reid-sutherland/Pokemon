@@ -88,10 +88,11 @@ Take a look at this screenshot showing the "Look for Pokemon" code
 5. This is where we will make some changes! This is where the player is trying to catch the Pokemon.
 
 Copy and paste these two lines of code into the **if** statement at 5, and then try building and running your game again to see what happens:
+
 ```java
 boolean pokemonFound = false;
 
-while (pokemonFound == true) {
+while (pokemonFound == false) {
 
     int chance = random.nextInt(100);
 
@@ -99,4 +100,42 @@ while (pokemonFound == true) {
 
 }
 ```
+You should notice that this will just print a new random number over an over again. We can use this code to evaluate the player's "chance" of catching the Pokemon.
+Now, let's try giving the player a chance to catch the Pokemon.
+Look at the if statements at the "3" section in the screenshot from before. We are going to want to use another **if** statement here to see if the player caught the Pokemon.
+For example, if the "chance" variable is above, say, 50, then we can pretend the player successfully caught the Pokemon.
+```java
+if (chance > 50) {
+  // They caught the Pokemon!
+}
+else {
+  // They didn't catch the Pokemon, they need to try again!
+}
+```
+Replace the JOptionPane function call that we just added with these if statements above.
+
+Also, we should reduce the player's Pokeball count by 1 each time they try to catch a Pokemon. See if you can figure out where to put this statement in code.
+```java
+numPokeballs--;
+```
+
+If they catch the Pokemon, we should change the "looping condition" to true so that we know they are done throwing Pokeballs
+```java
+pokemonFound = true;
+```
+
+After the loop, you should tell the player which Pokemon they caught! If you are stuck, try using the **if** statements from section 3 in the screenshot above as a starting point.
+
+After all this, if your code is working, try catching a Pokemon, and then checking your bag afterwards to see how many Pokeballs you have left!
+
+##### Have fun! :)
+
+
+
+
+
+## TO-DO list
+* Use if statements to determine if the player successfully caught the Pokemon. You can make it hard to catch the Pokemon making the **if** number higher, or make it easier to catch by making the number lower
+* Tell the player which Pokemon they caught
+* Reduce the player's number of Pokeballs by 1 each time they fail or succeed on a throw.
 
