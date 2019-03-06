@@ -64,15 +64,31 @@ After your program has been successfully built, you should be able to run the co
 # Pokemon Game
 
 ### Get started
-Now we can take a look at the code. On the left side of your IntelliJ window, there should be a "directory-tree" that shows your project directory. Click on the arrow next to a directory to open it.
-To get to our main code, open Pokemon-master -> src -> Game. Double click on "Game" to open up our game's code. This file is called a **_Class_**. Java is entirely focused on using classes to make things happen. Most of this project will just involve editing and adding things to the _Game_ class.
+Now we can take a look at the code. 
+* On the left side of your IntelliJ window, there should be a "directory-tree" that shows your project directory. 
+* Click on the arrow next to a directory to open it.
+* To get to our main code, open Pokemon-master -> src -> Game. 
+* Double click on "Game" to open up our game's code. 
+* This file is called a **_Class_**. Java is entirely focused on using classes to make things happen. Most of this project will just involve editing and adding things to the _Game_ class.
 
 ### Code review
 
 
-### Poke
-
-
 ### To Do!
-Let's talk about how we can make our game better.
-Right now, we can look for Pokemon, check our bag to see how many Pokeballs we have, and quit. If we look for 
+Let's talk about how we can make our game better. 
+* Right now, we can look for Pokemon, check our bag to see how many Pokeballs we have, and quit. 
+* If the player enters 'A' as their choice, then the code takes them to the section where they look for Pokemon. 
+
+Take a look at this screenshot showing the "Look for Pokemon" code
+
+![alt text](https://github.com/reid-sutherland/Pokemon/blob/master/code_snippet_1.png "Look For Pokemon code")
+
+1. At 1, the JOptionPane._showMessageDialog()_ function is used to display a message to the user, that a Pokemon has appeared.
+2. At 2, the **random**.nextInt() function is used to get a random integer. We put "2" inside the parentheses so that a value between 0 and 2 will be picked randomly. We store that random number in the integer variable _whichPokemon_.
+3. At 3, we use **if - else** statements to determine which Pokemon was found, based on the variable _whichPokemon_. The message gets changed according to which Pokemon was found.
+4. At 4, we ask the user if they want to try to catch the Pokemon. If they select yes, then the **if** statement at 5 will be true, which means we will execute that code. Otherwise, the **if** statement will be false, which means we will execute the **else** statement at 6.
+5. This is where we will make some changes! This is where the player is trying to catch the Pokemon.
+
+Copy and paste these two lines of code into the **if** statement at 5, and then try building and running your game again to see what happens:
+
+
