@@ -71,8 +71,6 @@ Now we can take a look at the code.
 * Double click on "Game" to open up our game's code. 
 * This file is called a **_Class_**. Java is entirely focused on using classes to make things happen. Most of this project will just involve editing and adding things to the _Game_ class.
 
-### Code review
-
 
 ### To Do!
 Let's talk about how we can make our game better. 
@@ -90,5 +88,15 @@ Take a look at this screenshot showing the "Look for Pokemon" code
 5. This is where we will make some changes! This is where the player is trying to catch the Pokemon.
 
 Copy and paste these two lines of code into the **if** statement at 5, and then try building and running your game again to see what happens:
+'''java
+boolean pokemonFound = false;
 
+while (pokemonFound == true) {
+
+    int chance = random.nextInt(100);
+
+    JOptionPane.showMessageDialog(null, Integer.toString(chance));
+
+}
+'''
 
