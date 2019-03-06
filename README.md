@@ -88,7 +88,7 @@ Take a look at this screenshot showing the "Look for Pokemon" code
 5. This is where we will make some changes! This is where the player is trying to catch the Pokemon.
 
 Copy and paste these two lines of code into the **if** statement at 5, and then try building and running your game again to see what happens:
-'''java
+```java
 boolean pokemonFound = false;
 
 while (pokemonFound == true) {
@@ -98,5 +98,5 @@ while (pokemonFound == true) {
     JOptionPane.showMessageDialog(null, Integer.toString(chance));
 
 }
-'''
+```
 
