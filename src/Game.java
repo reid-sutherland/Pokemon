@@ -22,7 +22,8 @@ public class Game {
     // It is a single instance of the "Random" class, and we have named it random
     private Random random;
 
-    // This is where we initialize our variables
+    // This is called the "Constructor"
+    // this is where we initialize our variables
     public Game() {
         action = "";
         message = welcomeDialog;
@@ -30,10 +31,13 @@ public class Game {
         numPokeballs = 100;
     }
 
+
+    // This is the "run" function. This is where the main code for our game is
     public void run() {
 
         JOptionPane.showMessageDialog(null, message);
 
+        // This "while loop" will keep looping until the user selects "D" to quit.
         while (action != "D") {
 
             message = menuDialog;
@@ -43,11 +47,10 @@ public class Game {
 
             // Convert the text response to upper case
             action = action.toUpperCase();
-            JOptionPane.showMessageDialog(null, action);
 
             // Now we do something depending on which choice the player makes!
-            // Look for Pokemon!
-            if (action.compareTo("A") == 0) {      // action.compareTo("") returns 0 if the strings are equal
+            // Player wants to look for Pokemon!
+            if (action.compareTo("A") == 0) {      // action.compareTo("") will be equal to 0 if the strings are equal
                 // The player found a pokemon!
                 message = "A wild Pokémon has appeared!";
                 JOptionPane.showMessageDialog(null, message);
@@ -93,6 +96,8 @@ public class Game {
                 message = "That's not a valid choice, try again!";
                 JOptionPane.showMessageDialog(null, message);
             }
+
+            // Now the code loops back to the top of this "while loop", unless the user chose to quit
         }
 
         JOptionPane.showMessageDialog(null, "Goodbye!");
